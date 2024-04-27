@@ -22,6 +22,10 @@ def info(message):
         bot.send_message(message.chat.id, f'Привет, {message.from_user.first_name} {message.from_user.last_name}!')
     elif message.text.lower() == 'id':
         bot.reply_to(message, f'Ваш ID: {message.from_user.id}')
+    elif message.text.lower() == 'красавчик баля':
+        bot.send_message(message.chat.id, f'Спасибо ты тоже ебать тип, {message.from_user.first_name} {message.from_user.last_name}!')
+    elif message.text.lower() == 'внатуре красавчик':
+        bot.reply_to(message, 'от души брат')
 
 
 bot.polling(none_stop=True)
