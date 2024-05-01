@@ -34,7 +34,7 @@ def get_weather(message):
         advice = ans1 if temp > 10.0 else ans2
         bot.send_message(message.chat.id, advice)
     else:
-        bot.send_message(message.chat.id, 'К сожадению я не знаю такого города😭')
+        bot.send_message(message.chat.id, 'К сожалению я не знаю такого города😭')
 
 
 bot.polling(none_stop=True)
